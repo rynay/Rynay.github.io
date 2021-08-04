@@ -4,6 +4,7 @@ import { About } from './pages/About'
 import { Portfolio } from './pages/Portfolio'
 import { data } from './data'
 import { useState } from 'react'
+import s from './App.module.scss'
 
 function App() {
   const [theme, setTheme] = useState<keyof typeof data['themes']>(
@@ -28,14 +29,17 @@ function App() {
         changeLanguage={changeLanguage}
         changeTheme={changeTheme}
       />
-      <Switch>
-        <Route path="/portfolio">
-          <Portfolio />
-        </Route>
-        <Route path="/">
-          <About />
-        </Route>
-      </Switch>
+
+      <div className={s.scrollContainer} data-simplebar>
+        <Switch>
+          <Route path="/">
+            <About />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+        </Switch>
+      </div>
     </>
   )
 }

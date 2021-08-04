@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { data } from '../../data'
+import s from './Header.module.scss'
 
 type PropTypes = {
   language: keyof typeof data['languages']
@@ -14,10 +15,14 @@ export const Header = ({
   changeTheme,
 }: PropTypes) => {
   return (
-    <header>
-      <nav>
+    <header className={s.header}>
+      <nav className={s.header__nav}>
         {data.navLinks.map((navLink) => (
-          <NavLink to={navLink.link} key={navLink.link}>
+          <NavLink
+            to={navLink.link}
+            key={navLink.link}
+            className={s.header__navLink}
+            activeClassName={s.header__navLink_active}>
             {navLink.title[language]}
           </NavLink>
         ))}
