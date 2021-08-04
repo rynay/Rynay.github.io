@@ -32,14 +32,16 @@ function App() {
         changeLanguage={changeLanguage}
         changeTheme={changeTheme}
       />
-      <Switch>
-        <Route path="/">
-          <About />
-        </Route>
-        <Route path="/portfolio">
-          <Portfolio />
-        </Route>
-      </Switch>
+      <main className={s.container}>
+        <Switch>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="/">
+            <About theme={theme} />
+          </Route>
+        </Switch>
+      </main>
     </div>
   )
 }

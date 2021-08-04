@@ -1,5 +1,5 @@
 .app {
-  transition: all 0.5s;
+  transition: background-color 0.5s, color 0.5s;
   min-height: 100vh;
 }
 .app_dark {
@@ -14,4 +14,10 @@
 .scrollContainer {
   height: 100vh;
   max-height: 100vh;
+}
+
+.container {
+  width: 95vw;
+  max-width: 114rem;
+  margin: 0 auto;
 }
