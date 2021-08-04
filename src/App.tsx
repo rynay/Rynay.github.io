@@ -22,25 +22,25 @@ function App() {
   }
 
   return (
-    <>
+    <div
+      className={`${s.scrollContainer} ${s.app} ${
+        theme === 'dark' ? s.app_dark : s.app_light
+      } data-simplebar`}>
       <Header
         theme={theme}
         language={language}
         changeLanguage={changeLanguage}
         changeTheme={changeTheme}
       />
-
-      <div className={s.scrollContainer} data-simplebar>
-        <Switch>
-          <Route path="/">
-            <About />
-          </Route>
-          <Route path="/portfolio">
-            <Portfolio />
-          </Route>
-        </Switch>
-      </div>
-    </>
+      <Switch>
+        <Route path="/">
+          <About />
+        </Route>
+        <Route path="/portfolio">
+          <Portfolio />
+        </Route>
+      </Switch>
+    </div>
   )
 }
 

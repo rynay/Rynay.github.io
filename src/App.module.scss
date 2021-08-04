@@ -1,3 +1,17 @@
+.app {
+  transition: all 0.5s;
+  min-height: 100vh;
+}
+.app_dark {
+  background-color: #000;
+  color: #fff;
+}
+.app_light {
+  background-color: #fff;
+  color: #000;
+}
+
 .scrollContainer {
+  height: 100vh;
   max-height: 100vh;
 }
