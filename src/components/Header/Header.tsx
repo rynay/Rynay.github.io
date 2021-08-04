@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom'
-import { data, Theme } from '../../data'
+import { data } from '../../data'
 
 type PropTypes = {
   language: keyof typeof data['languages']
-  theme: Theme
+  theme: keyof typeof data['themes']
   changeLanguage: (lang: PropTypes['language']) => void
-  changeTheme: (theme: keyof typeof data['themes']) => void
+  changeTheme: (theme: PropTypes['theme']) => void
 }
 
 export const Header = ({

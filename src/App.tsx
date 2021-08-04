@@ -4,10 +4,11 @@ import { About } from './pages/About'
 import { Portfolio } from './pages/Portfolio'
 import { data } from './data'
 import { useState } from 'react'
-import { theme as getTheme, Theme } from './data'
 
 function App() {
-  const [theme, setTheme] = useState<Theme>(data.themes.dark)
+  const [theme, setTheme] = useState<keyof typeof data['themes']>(
+    data.themes.dark
+  )
   const [language, setLanguage] = useState<keyof typeof data['languages']>(
     data.languages.en
   )
@@ -16,7 +17,7 @@ function App() {
     setLanguage(language)
   }
   const changeTheme = (theme: keyof typeof data['themes']): void => {
-    setTheme(getTheme(theme))
+    setTheme(theme)
   }
 
   return (

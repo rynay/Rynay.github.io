@@ -1,16 +1,7 @@
-export const theme = (themeName: 'dark' | 'light'): Theme => {
-  return {
-    primaryBackgroundColor: themeName === 'dark' ? '#000' : '#fff',
-    secondaryBackgroundColor: themeName === 'dark' ? '#000' : '#fff',
-    primaryTextColor: themeName === 'dark' ? '#fff' : '#000',
-    secondaryTextColor: themeName === 'dark' ? '#fff' : '#000',
-  }
-}
-
 export const data: Data = {
   themes: {
-    dark: theme('dark'),
-    light: theme('light'),
+    dark: 'dark',
+    light: 'light',
   },
   languages: {
     ru: 'ru',
@@ -44,8 +35,8 @@ type NavLink = {
 
 type Data = {
   themes: {
-    dark: Theme
-    light: Theme
+    dark: 'dark'
+    light: 'light'
   }
   languages: {
     ru: 'ru'
@@ -53,11 +44,4 @@ type Data = {
   }
 
   navLinks: NavLink[]
-}
-
-export type Theme = {
-  primaryBackgroundColor: string
-  secondaryBackgroundColor: string
-  primaryTextColor: string
-  secondaryTextColor: string
 }
