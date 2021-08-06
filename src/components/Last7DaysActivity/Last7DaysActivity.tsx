@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
+import { data } from '../../data'
 import s from './Last7DaysActivity.module.scss'
 
 type PropTypes = {
-  theme: 'light' | 'dark'
+  theme: keyof typeof data['themes']
+  language: keyof typeof data['languages']
 }
 
-export const Last7DaysActivity = ({ theme }: PropTypes) => {
+export const Last7DaysActivity = ({ theme, language }: PropTypes) => {
   const [isLightShown, setIsLightShown] = useState<boolean>()
   const [isDarkShown, setIsDarkShown] = useState<boolean>()
 
@@ -16,7 +18,7 @@ export const Last7DaysActivity = ({ theme }: PropTypes) => {
 
   return (
     <section>
-      <h2>💻 Last 7 Days Activity:</h2>
+      <h2>{data.headings.activity[language]}:</h2>
       <figure
         className={`${s.lastActivity__chartsContainer} ${
           !isLightShown ? s.lastActivity__chartsContainer_hidden : ''

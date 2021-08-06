@@ -38,7 +38,7 @@ function App() {
             <Portfolio />
           </Route>
           <Route path="/">
-            <About theme={theme} />
+            <About language={language} theme={theme} />
           </Route>
         </Switch>
       </main>

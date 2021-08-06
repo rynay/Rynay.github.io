@@ -1,0 +1,13 @@
+.stack {
+  &__imagesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-height: 4rem;
+      max-width: 4rem;
+      object-fit: contain;
+    }
+  }
+}
