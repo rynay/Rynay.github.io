@@ -9,11 +9,15 @@ export const Stack = ({ language }: PropTypes) => {
   return (
     <section className={s.stack}>
       <h2>{data.headings.stack[language]}</h2>
-      <div className={s.stack__imagesContainer}>
+
+      <ul className={s.stack__techContainer}>
         {data.stack.map((tool) => (
-          <img key={tool.src} src={`/images/${tool.src}.svg`} alt={tool.alt} />
+          <li key={tool.src}>
+            <img src={`/images/${tool.src}.svg`} alt={tool.alt} />
+            <span>{tool.alt}</span>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   )
 }

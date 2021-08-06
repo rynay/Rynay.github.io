@@ -25,7 +25,8 @@ function App() {
     <div
       className={`${s.scrollContainer} ${s.app} ${
         theme === 'dark' ? s.app_dark : s.app_light
-      } data-simplebar`}>
+      }`}
+      data-simplebar>
       <Header
         theme={theme}
         language={language}

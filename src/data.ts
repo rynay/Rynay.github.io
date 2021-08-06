@@ -29,6 +29,14 @@ export const data: Data = {
       alt: 'CSS',
     },
     {
+      src: 'git',
+      alt: 'Git',
+    },
+    {
+      src: 'github',
+      alt: 'GitHub',
+    },
+    {
       src: 'visual-studio-code',
       alt: 'VS Code',
     },

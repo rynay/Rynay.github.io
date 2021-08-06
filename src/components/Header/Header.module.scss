@@ -13,6 +13,8 @@
   &__nav {
     display: flex;
     &Link {
+      font-size: 1.7rem;
+      cursor: pointer;
       color: inherit;
       text-decoration: none;
       display: block;
@@ -29,11 +31,12 @@
         height: 0.2em;
         transition: all 0.2s;
       }
-    }
-    &Link_active {
-      &::after {
-        width: 100%;
-        background-color: #1976d2;
+
+      &_active {
+        &::after {
+          width: 100%;
+          background-color: currentColor;
+        }
       }
     }
   }

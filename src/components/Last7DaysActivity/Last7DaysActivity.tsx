@@ -25,10 +25,10 @@ export const Last7DaysActivity = ({ theme, language }: PropTypes) => {
         }`}>
         <embed
           width={'50%'}
-          src="https://wakatime.com/share/@rynay/3ff3769d-6a27-4997-99fa-f5db5f030abf.svg"></embed>
+          src="https://wakatime.com/share/@rynay/63f497a2-e009-4c3d-be34-5632b9bcb701.svg"></embed>
         <embed
           width={'50%'}
-          src="https://wakatime.com/share/@rynay/bfc8edd9-32c4-405a-9e2f-da958216dfd2.svg"></embed>
+          src="https://wakatime.com/share/@rynay/ed7940e3-4323-43b8-a058-1757ef30ac47.svg"></embed>
       </figure>
       <figure
         className={`${s.lastActivity__chartsContainer} ${
@@ -36,10 +36,10 @@ export const Last7DaysActivity = ({ theme, language }: PropTypes) => {
         }`}>
         <embed
           width={'50%'}
-          src="https://wakatime.com/share/@rynay/e85a96bf-6292-4ef6-b69b-b7a75416ff60.svg"></embed>
+          src="https://wakatime.com/share/@rynay/2a01873b-3f57-47e8-9495-207f740be9cf.svg"></embed>
         <embed
           width={'50%'}
-          src="https://wakatime.com/share/@rynay/cae70cb8-f570-4d33-a044-7dc6159f2fab.svg"></embed>
+          src="https://wakatime.com/share/@rynay/41168743-ba68-4234-9062-6ea94d26b550.svg"></embed>
       </figure>
     </section>
   )
