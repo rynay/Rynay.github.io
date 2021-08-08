@@ -74,9 +74,16 @@ export const data: Data = {
     {
       title: {
         ru: 'Портфолио',
-        en: 'Portfolio',
+        en: 'Projects',
       },
-      link: '/portfolio',
+      link: '/projects',
+    },
+    {
+      title: {
+        ru: 'Контакты',
+        en: 'Contact',
+      },
+      link: '/contact',
     },
   ],
 }

@@ -1,10 +1,11 @@
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, useRouteMatch } from 'react-router-dom'
 import { Header } from './components/Header'
 import { About } from './pages/About'
-import { Portfolio } from './pages/Portfolio'
+import { Projects } from './pages/Projects'
 import { data } from './data'
 import { useState } from 'react'
 import s from './App.module.scss'
+import { Charts } from './components/Charts'
 
 function App() {
   const [theme, setTheme] = useState<keyof typeof data['themes']>(
@@ -35,13 +36,14 @@ function App() {
       />
       <main className={s.container}>
         <Switch>
-          <Route path="/portfolio">
-            <Portfolio />
+          <Route path="/projects">
+            <Projects />
           </Route>
           <Route path="/">
-            <About language={language} theme={theme} />
+            <About language={language} />
           </Route>
         </Switch>
+        <Charts theme={theme} />
       </main>
     </div>
   )
