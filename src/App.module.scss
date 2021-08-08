@@ -1,5 +1,5 @@
 .app {
-  transition: background-color 0.5s, color 0.5s;
+  // transition: background-color 0.2s, color 0.2s;
   min-height: 100vh;
 }
 .app_dark {
@@ -17,6 +17,7 @@
 }
 
 .container {
+  padding: 2em 0 4em;
   width: 95vw;
   max-width: 114rem;
   margin: 0 auto;
