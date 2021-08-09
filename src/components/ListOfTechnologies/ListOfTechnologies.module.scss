@@ -1,0 +1,26 @@
+.technologies {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  li {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+
+    img {
+      max-height: 2em;
+      max-width: 2em;
+      object-fit: contain;
+    }
+    span {
+      font-size: 1.1em;
+      padding: 0 0.35em;
+    }
+  }
+}

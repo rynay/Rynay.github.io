@@ -1,4 +1,4 @@
-import { Switch, Route, useRouteMatch } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import { Header } from './components/Header'
 import { About } from './pages/About'
 import { Projects } from './pages/Projects'
@@ -37,7 +37,7 @@ function App() {
       <main className={s.container}>
         <Switch>
           <Route path="/projects">
-            <Projects />
+            <Projects theme={theme} language={language} />
           </Route>
           <Route path="/">
             <About language={language} />

@@ -1,4 +1,154 @@
 export const data: Data = {
+  projects: [
+    {
+      title: 'Netflix Clone',
+      site: 'https://netflix-react-clone-70d64.web.app/',
+      code: '',
+      image: '/images/netflix.png',
+      description: '',
+      technologies: [
+        {
+          src: 'javascript',
+          alt: 'JavaScript',
+        },
+        {
+          src: 'react',
+          alt: 'React',
+        },
+        {
+          src: 'redux',
+          alt: 'Redux',
+        },
+        {
+          src: 'sass',
+          alt: 'SASS',
+        },
+        {
+          src: 'html',
+          alt: 'HTML',
+        },
+        {
+          src: 'css',
+          alt: 'CSS',
+        },
+        {
+          src: 'firebase',
+          alt: 'Firebase',
+        },
+      ],
+    },
+    {
+      title: 'Instagram Clone',
+      site: 'https://instagram-clone-react-cb1af.web.app/',
+      code: '',
+      image: '/images/instagram.png',
+      description: '',
+      technologies: [
+        {
+          src: 'javascript',
+          alt: 'JavaScript',
+        },
+        {
+          src: 'react',
+          alt: 'React',
+        },
+        {
+          src: 'redux',
+          alt: 'Redux',
+        },
+        {
+          src: 'sass',
+          alt: 'SASS',
+        },
+        {
+          src: 'html',
+          alt: 'HTML',
+        },
+        {
+          src: 'css',
+          alt: 'CSS',
+        },
+        {
+          src: 'firebase',
+          alt: 'Firebase',
+        },
+      ],
+    },
+    {
+      title: 'Amazon Clone',
+      site: 'https://amazo-react-clone.web.app/',
+      code: '',
+      image: '/images/amazon.png',
+      description: '',
+      technologies: [
+        {
+          src: 'javascript',
+          alt: 'JavaScript',
+        },
+        {
+          src: 'react',
+          alt: 'React',
+        },
+        {
+          src: 'redux',
+          alt: 'Redux',
+        },
+        {
+          src: 'sass',
+          alt: 'SASS',
+        },
+        {
+          src: 'html',
+          alt: 'HTML',
+        },
+        {
+          src: 'css',
+          alt: 'CSS',
+        },
+        {
+          src: 'firebase',
+          alt: 'Firebase',
+        },
+      ],
+    },
+    {
+      title: 'Chat App',
+      site: 'https://whatsapp-react-clone-506fb.web.app/',
+      code: '',
+      image: '/images/whatsapp.png',
+      description: '',
+      technologies: [
+        {
+          src: 'javascript',
+          alt: 'JavaScript',
+        },
+        {
+          src: 'react',
+          alt: 'React',
+        },
+        {
+          src: 'redux',
+          alt: 'Redux',
+        },
+        {
+          src: 'sass',
+          alt: 'SASS',
+        },
+        {
+          src: 'html',
+          alt: 'HTML',
+        },
+        {
+          src: 'css',
+          alt: 'CSS',
+        },
+        {
+          src: 'firebase',
+          alt: 'Firebase',
+        },
+      ],
+    },
+  ],
   stack: [
     {
       src: 'typescript',
@@ -11,6 +161,10 @@ export const data: Data = {
     {
       src: 'redux',
       alt: 'Redux',
+    },
+    {
+      src: 'redux',
+      alt: 'Redux-Toolkit',
     },
     {
       src: 'javascript',
@@ -37,6 +191,10 @@ export const data: Data = {
       alt: 'GitHub',
     },
     {
+      src: 'firebase',
+      alt: 'Firebase',
+    },
+    {
       src: 'visual-studio-code',
       alt: 'VS Code',
     },
@@ -53,6 +211,16 @@ export const data: Data = {
     stack: {
       ru: '🧰 Языки, Технологии и Инструменты:',
       en: '🧰 Languages, Technologies and Tools:',
+    },
+  },
+  buttonTexts: {
+    projectSiteLink: {
+      ru: 'Посетить',
+      en: 'Visit',
+    },
+    projectSourceLink: {
+      ru: 'Исходный код',
+      en: 'Source Code',
     },
   },
   themes: {
@@ -96,11 +264,27 @@ type NavLink = {
   link: string
 }
 
+export type Technology = {
+  src: string
+  alt: string
+}
+
 type Data = {
-  stack: {
-    src: string
-    alt: string
+  projects: {
+    title: string
+    image: string
+    site: string
+    code: string
+    description: string
+    technologies: Technology[]
   }[]
+  buttonTexts: {
+    [key in string]: {
+      ru: string
+      en: string
+    }
+  }
+  stack: Technology[]
   headings: {
     [key in string]: {
       en: string
