@@ -1,52 +1,36 @@
-import { Switch, Route } from 'react-router-dom'
-import { Header } from './components/Header'
-import { About } from './pages/About'
-import { Projects } from './pages/Projects'
-import { data } from './data'
-import { useState } from 'react'
-import s from './App.module.scss'
-import { Charts } from './components/Charts'
+import { Switch, Route } from "react-router-dom";
+import { Header } from "./components/Header";
+import { About } from "./pages/About";
+import { Projects } from "./pages/Projects";
+import s from "./App.module.scss";
+import { Charts } from "./components/Charts";
+import { ThemeContext } from "./contexts/ThemeProvider";
+import { useContext } from "react";
 
 function App() {
-  const [theme, setTheme] = useState<keyof typeof data['themes']>(
-    data.themes.dark
-  )
-  const [language, setLanguage] = useState<keyof typeof data['languages']>(
-    data.languages.en
-  )
-
-  const changeLanguage = (language: keyof typeof data['languages']): void => {
-    setLanguage(language)
-  }
-  const changeTheme = (theme: keyof typeof data['themes']): void => {
-    setTheme(theme)
-  }
+  const [theme] = useContext(ThemeContext);
 
   return (
     <div
       className={`${s.scrollContainer} ${s.app} ${
-        theme === 'dark' ? s.app_dark : s.app_light
+        theme === "dark" ? s.app_dark : s.app_light
       }`}
-      data-simplebar>
-      <Header
-        theme={theme}
-        language={language}
-        changeLanguage={changeLanguage}
-        changeTheme={changeTheme}
-      />
+      data-simplebar
+    >
+      <Header />
       <main className={s.container}>
         <Switch>
           <Route path="/projects">
-            <Projects theme={theme} language={language} />
+            <Projects />
           </Route>
           <Route path="/">
-            <About language={language} />
+            <About />
           </Route>
         </Switch>
-        <Charts theme={theme} />
+        <Charts />
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

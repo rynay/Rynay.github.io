@@ -1,13 +1,12 @@
-import { data } from '../../data'
+import { useContext } from "react";
+import { LanguageContext } from "../../contexts/LanguageProvider";
+import { data } from "../../data";
 
-type PropTypes = {
-  language: keyof typeof data['languages']
-}
-
-export const Greeting = ({ language }: PropTypes) => {
+export const Greeting = () => {
+  const [language] = useContext(LanguageContext);
   return (
     <section>
       <h1>{data.headings.greeting[language]}</h1>
     </section>
-  )
-}
+  );
+};

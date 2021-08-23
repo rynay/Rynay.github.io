@@ -5,6 +5,8 @@ export const data: Data = {
       site: 'https://netflix-react-clone-70d64.web.app/',
       code: '',
       image: '/images/netflix.png',
+      width: '3',
+      height: '3',
       description: '',
       technologies: [
         {
@@ -42,7 +44,8 @@ export const data: Data = {
       site: 'https://instagram-clone-react-cb1af.web.app/',
       code: '',
       image: '/images/instagram.png',
-      description: '',
+      description: '',width: '2',
+      height: '2',
       technologies: [
         {
           src: 'javascript',
@@ -79,7 +82,8 @@ export const data: Data = {
       site: 'https://amazo-react-clone.web.app/',
       code: '',
       image: '/images/amazon.png',
-      description: '',
+      description: '',width: '2',
+      height: '2',
       technologies: [
         {
           src: 'javascript',
@@ -117,6 +121,8 @@ export const data: Data = {
       code: '',
       image: '/images/whatsapp.png',
       description: '',
+      width: '2',
+      height: '2',
       technologies: [
         {
           src: 'javascript',
@@ -275,6 +281,8 @@ type Data = {
     image: string
     site: string
     code: string
+    width: string,
+    height: string,
     description: string
     technologies: Technology[]
   }[]
