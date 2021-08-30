@@ -6,9 +6,7 @@ export const Projects = () => {
     <article className={s.container}>
       {data.projects.map((project) => (
         <section
-          className={`${s[`height--${project.height}`]} ${
-            s[`width--${project.width}`]
-          }`}
+          className={project.half ? s.project_halfWidth : s.project_fullWidth}
           key={project.title}
         >
           <a href={project.site} target="_blank" rel="noreferrer">

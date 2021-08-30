@@ -25,11 +25,12 @@ export const Charts = () => {
       >
         <embed
           width={"50%"}
-          src="https://wakatime.com/share/@rynay/63f497a2-e009-4c3d-be34-5632b9bcb701.svg"
+          src="https://wakatime.com/share/@rynay/41b2a67f-68b2-4484-a45f-c9df5e09e36f.svg"
         ></embed>
+
         <embed
           width={"50%"}
-          src="https://wakatime.com/share/@rynay/ed7940e3-4323-43b8-a058-1757ef30ac47.svg"
+          src="https://wakatime.com/share/@rynay/5d769a69-b47b-4b74-a268-093050e99e4f.svg"
         ></embed>
       </figure>
       <figure
@@ -39,11 +40,12 @@ export const Charts = () => {
       >
         <embed
           width={"50%"}
-          src="https://wakatime.com/share/@rynay/2a01873b-3f57-47e8-9495-207f740be9cf.svg"
+          src="https://wakatime.com/share/@rynay/e8cc7d16-af56-4cbc-8527-7c553f56e5d7.svg"
         ></embed>
+
         <embed
           width={"50%"}
-          src="https://wakatime.com/share/@rynay/41168743-ba68-4234-9062-6ea94d26b550.svg"
+          src="https://wakatime.com/share/@rynay/ece3a864-aced-4a12-936d-560f4952795a.svg"
         ></embed>
       </figure>
     </>

@@ -7,7 +7,7 @@ export const About = () => {
     <>
       <Greeting />
       <Stack />
-      <Last7DaysActivity />
+      {/* <Last7DaysActivity /> */}
     </>
   );
 };

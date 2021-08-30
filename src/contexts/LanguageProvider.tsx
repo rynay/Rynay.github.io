@@ -1,4 +1,4 @@
-import { ReactElement, createContext, useState } from "react";
+import { ReactElement, createContext, useState, useEffect } from "react";
 import { data } from "../data";
 
 type Props = {
@@ -11,8 +11,12 @@ export const LanguageContext = createContext<
 
 export const LanguageProvider = ({ children }: Props) => {
   const [language, setLanguage] = useState<keyof typeof data["languages"]>(
-    data.languages.en
+    (localStorage.getItem("language") as "ru" | "en") || data.languages.en
   );
+
+  useEffect(() => {
+    localStorage.setItem("language", language);
+  }, [language]);
 
   const toggleLanguage = () => {
     language === "ru" ? setLanguage("en") : setLanguage("ru");
