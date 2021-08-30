@@ -27,7 +27,7 @@ function App() {
             <About />
           </Route>
         </Switch>
-        {/* <Charts /> */}
+        <Charts />
       </main>
     </div>
   );

@@ -4,3 +4,12 @@
     width: 0;
   }
 }
+
+.chart {
+  width: 100%;
+}
+@media screen and (min-width: 48em) {
+  .chart {
+    width: 50%;
+  }
+}
