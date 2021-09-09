@@ -38,43 +38,6 @@ export const data = {
         },
       ],
     },
-    // {
-    //   title: "Instagram Clone",
-    //   site: "https://instagram-clone-react-cb1af.web.app/",
-    //   code: "",
-    //   image: "/images/instagram.png",
-    //   description: "",
-    //   technologies: [
-    //     {
-    //       src: "javascript",
-    //       alt: "JavaScript",
-    //     },
-    //     {
-    //       src: "react",
-    //       alt: "React",
-    //     },
-    //     {
-    //       src: "redux",
-    //       alt: "Redux",
-    //     },
-    //     {
-    //       src: "sass",
-    //       alt: "SASS",
-    //     },
-    //     {
-    //       src: "html",
-    //       alt: "HTML",
-    //     },
-    //     {
-    //       src: "css",
-    //       alt: "CSS",
-    //     },
-    //     {
-    //       src: "firebase",
-    //       alt: "Firebase",
-    //     },
-    //   ],
-    // },
     {
       half: false,
       title: "Amazon Clone",
@@ -286,13 +249,13 @@ export const data = {
       },
       link: "/",
     },
-    {
-      title: {
-        ru: "Портфолио",
-        en: "Projects",
-      },
-      link: "/projects",
-    },
+    // {
+    //   title: {
+    //     ru: "Портфолио",
+    //     en: "Projects",
+    //   },
+    //   link: "/projects",
+    // },
     // {
     //   title: {
     //     ru: "Контакты",
